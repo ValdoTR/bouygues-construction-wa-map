@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <style>
+            *{
+                font-family: 'Roboto', sans-serif;
+            }
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            .ask{
+                margin-top: 40vh;
+            }
+            .loading::after{
+                position: absolute;
+                content: ".";
+                -webkit-animation: .5s linear 0s infinite alternate loading;
+                animation: .5s linear 0s infinite alternate loading;
+            }
+            p{
+                font-size: 30px;
+            }
+            @-webkit-keyframes loading { 
+                50% { content: ".."; }  
+                100% { content: "..."; }
+            }
+            @keyframes loading { 
+                50% { content: ".."; }  
+                100% { content: "..."; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row ask">
+                <div class="col-xs-12">
+                    <h1 class="loading" id="load">Le défi qui t'attend </h1>
+                    <h1 id="ask-title"></h1>
+                    <p id="ask-content"></p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const question = [
+                {
+                    title: "",
+                    message: " Je mange de la viande rouge 1 fois par semaine"
+                },
+                {
+                    title: "",
+                    message: " Je viens en co-voiturage 2 jours par semaine"
+                },
+                {
+                    title: "",
+                    message: "J’achète des vêtements respectueux de l’environnement"
+                },
+                {
+                    title: "",
+                    message: "Je réduis de moitié l’usage de ma voiture"
+                },
+                {
+                    title: "",
+                    message: "Je favorise le train pour mes vacances plutôt que la voiture"
+                },
+                {
+                    title: "",
+                    message: "J’achète mon portable reconditionné"
+                },
+                {
+                    title: "",
+                    message: "Je réduis mes déchets plastiques en achetant en vrac"
+                },
+                {
+                    title: "",
+                    message: "Je favorise les circuits courts pour mes courses"
+                },
+                {
+                    title: "",
+                    message: "Je compense mon empreinte carbone à la fin de l’année"
+                },
+                {
+                    title: "",
+                    message: "Je pars en vacances à l’étranger 1 fois tous les 3 ans"
+                },
+                {
+                    title: "",
+                    message: "Je deviens ambassadeur de la Fresque du Climat• Je mange de la viande rouge 1 fois par semaine"
+                },
+                {
+                    title: "",
+                    message: "Je viens en co-voiturage 2 jours par semaine"
+                },
+                {
+                    title: "",
+                    message: "J’achète des vêtements respectueux de l’environnement"
+                },
+                {
+                    title: "",
+                    message: "Je réduis de moitié l’usage de ma voiture"
+                },
+                {
+                    title: "",
+                    message: "Je favorise le train pour mes vacances plutôt que la voiture"
+                },
+                {
+                    title: "",
+                    message: "J’achète mon portable reconditionné"
+                },
+                {
+                    title: "",
+                    message: "Je réduis mes déchets plastiques en achetant en vrac"
+                },
+                {
+                    title: "",
+                    message: "Je favorise les circuits courts pour mes courses"
+                },
+                {
+                    title: "",
+                    message: "Je compense mon empreinte carbone à la fin de l’année"
+                },
+                {
+                    title: "",
+                    message: "Je pars en vacances à l’étranger 1 fois tous les 3 ans"
+                },
+                {
+                    title: "",
+                    message: "Je deviens ambassadeur de la Fresque du Climat"
+                }
+            ];
+            const min = 0;
+            const max = question.length -1;
+            document.addEventListener('DOMContentLoaded', () => {
+                setTimeout(() => {
+                    const askRandom = question[Math.floor(Math.random() * (max - min + 1) + min)];
+                    const askTitleElement = document.getElementById('ask-title');
+                    askTitleElement.innerText = askRandom.title;
+
+                    const askContentElement = document.getElementById('ask-content');
+                    askContentElement.innerText = askRandom.message;
+
+                    const loadElement = document.getElementById('load');
+                    loadElement.style.display = "none";
+                }, 4000);
+            }, false);
+        </script>
+    </body>
+</html>
