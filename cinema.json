@@ -1192,7 +1192,7 @@
         {
          "name":"mapLink",
          "type":"string",
-         "value":"https://lizz06.github.io/bouygues-construction-wa-map/cinema.json"
+         "value":"https:\/\/lizz06.github.io\/bouygues-construction-wa-map\/cinema.json"
         }, 
         {
          "name":"mapName",
