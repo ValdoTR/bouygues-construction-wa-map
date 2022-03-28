@@ -136,7 +136,7 @@ WA.onInit().then(() => {
         //@ts-ignore
         currentPopup = WA.ui.openPopup("market6Popup", "Les secrets de Koh Lanta", []);
     })
-    WA.room.onLeaveLayer('zones/market7').subscribe(closePopup)
+    WA.room.onLeaveLayer('zones/market6').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market7').subscribe(() => {
         const url = WA.state["market7"] as string;
