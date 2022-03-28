@@ -950,11 +950,11 @@
         {
          "columns":1,
          "firstgid":4245,
-         "image":"src\/assets\/sprites\/tile007-32.png",
+         "image":"src\/assets\/sprites\/barman.png",
          "imageheight":68,
          "imagewidth":34,
          "margin":1,
-         "name":"tile007-32",
+         "name":"barman",
          "spacing":2,
          "tilecount":2,
          "tileheight":32,
