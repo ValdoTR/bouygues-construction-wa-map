@@ -99,63 +99,63 @@ WA.onInit().then(() => {
     WA.room.onEnterLayer('zones/market1').subscribe(() => {
         const url = WA.state["market1"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market1Popup", "Pierre Auberger te parle", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market1Popup", "Pierre Auberger te parle", []);
     })
     WA.room.onLeaveLayer('zones/market1').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market2').subscribe(() => {
         const url = WA.state["market2"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market2Popup", "Les insights de DALS", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market2Popup", "Les insights de DALS", []);
     })
     WA.room.onLeaveLayer('zones/market2').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market3').subscribe(() => {
         const url = WA.state["market3"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market3Popup", "Les bons plans Bouygues Immo pour acheter pas cher", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market3Popup", "Les bons plans Bouygues Immo pour acheter pas cher", []);
     })
     WA.room.onLeaveLayer('zones/market3').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market4').subscribe(() => {
         const url = WA.state["market4"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market4Popup", "Victoria, 24 ans, pilote de tunnelier sur le RER E", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market4Popup", "Victoria, 24 ans, pilote de tunnelier sur le RER E", []);
     })
     WA.room.onLeaveLayer('zones/market4').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market5').subscribe(() => {
         const url = WA.state["market5"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market5Popup", "La 5G et les vaccins Pfizer", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market5Popup", "La 5G et les vaccins Pfizer", []);
     })
     WA.room.onLeaveLayer('zones/market5').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market6').subscribe(() => {
         const url = WA.state["market6"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market6Popup", "Les secrets de Koh Lanta", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market6Popup", "Les secrets de Koh Lanta", []);
     })
     WA.room.onLeaveLayer('zones/market7').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market7').subscribe(() => {
         const url = WA.state["market7"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market7Popup", "Le coin de ceux qui cherchent des bons artisans pas cher en Ile de France pour refaire leur salle de bain", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market7Popup", "Le coin de ceux qui cherchent des bons artisans pas cher en Ile de France pour refaire leur salle de bain", []);
     })
     WA.room.onLeaveLayer('zones/market7').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market8').subscribe(() => {
         const url = WA.state["market8"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market8Popup", "Les dessous des pubs Bouygues Telecom", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market8Popup", "Les dessous des pubs Bouygues Telecom", []);
     })
     WA.room.onLeaveLayer('zones/market8').subscribe(closePopup)
 
     WA.room.onEnterLayer('zones/market9').subscribe(() => {
         const url = WA.state["market9"] as string;
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("market9Popup", "Devenir community manager chez Colas", [{label: 'Ouvrir', className: 'primary', callback: () => openWebsite(url)}]);
+        currentPopup = WA.ui.openPopup("market9Popup", "Devenir community manager chez Colas", []);
     })
     WA.room.onLeaveLayer('zones/market9').subscribe(closePopup)
 
