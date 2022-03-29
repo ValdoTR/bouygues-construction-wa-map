@@ -165,7 +165,7 @@ WA.onInit().then(() => {
         const urlMartini = "https://www.ateliersetsaveurs.com/les-recettes/cocktails/detail/981/green-martini"
 
         //@ts-ignore
-        currentPopup = WA.ui.openPopup("drinkZonePopup", "Qu'est-ce que je vous sert ?", [
+        currentPopup = WA.ui.openPopup("drinkZonePopup", "Qu'est-ce que je vous sers ?", [
             {label: 'Red Mojito', className: 'primary', callback: () => openWebsite(urlMojito)},
             {label: 'Green Martini', className: 'primary', callback: () => openWebsite(urlMartini)},
         ]);
